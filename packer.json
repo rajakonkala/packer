@@ -28,10 +28,9 @@
     "inline": [
       "apt-get update",
       "apt-get upgrade -y",
-      "apt-get -y install unzip",
       "apt-get -y install openjdk-8-jdk wget",
-      "wget http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.11/bin/apache-tomcat-9.0.11.tar.gz -P /tmp",
-      "tar xf /tmp/apache-tomcat-9*.tar.gz -C /opt/tomcat",
+      "wget http://www-us.apache.org/dist/tomcat/tomcat-8/v8.0.38/bin/apache-tomcat-8.0.38.tar.gz",
+      "tar -zxvf /usr/local/tomcat/apache-tomcat-8.0.38.tar.gz ",
       "cp ./target/packer.war /usr/local/tomcat/webapps/packer.war",
       "CMD /usr/local/tomcat/bin/startup.sh && /bin/bash",
 
