@@ -28,14 +28,13 @@
     "inline": [
       "apt-get update",
       "apt-get upgrade -y",
-      "apt-get -y install nginx"
-      "apt-get -y install unzip"
-      "apt-get -y install openjdk-8-jdk wget"
-      "wget http://www-us.apache.org/apachemirror/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.5.35-windows-x64.zip -O /tmp/apache-tomcat-8.5.35-windows-x64.zip"
-      "unzip /usr/local/tomcat/apache-tomcat-8.5.35-windows-x64.zip -d temp_for_zip_extract"
-      "cp ./target/packer.war /usr/local/tomcat/webapps/packer.war"
-      "CMD /usr/local/tomcat/bin/startup.sh && /bin/bash"
-,
+      "apt-get -y install unzip",
+      "apt-get -y install openjdk-8-jdk wget",
+      "wget http://www-us.apache.org/apachemirror/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.5.35-windows-x64.zip -O /tmp/apache-tomcat-8.5.35-windows-x64.zip",
+      "unzip /usr/local/tomcat/apache-tomcat-8.5.35-windows-x64.zip -d temp_for_zip_extract",
+      "cp ./target/packer.war /usr/local/tomcat/webapps/packer.war",
+      "CMD /usr/local/tomcat/bin/startup.sh && /bin/bash",
+
 
       "/usr/sbin/waagent -force -deprovision+user && export HISTSIZE=0 && sync"
     ],
