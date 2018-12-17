@@ -30,8 +30,8 @@
       "apt-get upgrade -y",
       "apt-get -y install unzip",
       "apt-get -y install openjdk-8-jdk wget",
-      "wget http://www-us.apache.org/apachemirror/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.5.35-windows-x64.zip -O /tmp/apache-tomcat-8.5.35-windows-x64.zip",
-      "unzip /usr/local/tomcat/apache-tomcat-8.5.35-windows-x64.zip -d temp_for_zip_extract",
+      "wget http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.11/bin/apache-tomcat-9.0.11.tar.gz -P /tmp",
+      "tar xf /tmp/apache-tomcat-9*.tar.gz -C /opt/tomcat",
       "cp ./target/packer.war /usr/local/tomcat/webapps/packer.war",
       "CMD /usr/local/tomcat/bin/startup.sh && /bin/bash",
 
