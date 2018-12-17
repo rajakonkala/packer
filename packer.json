@@ -30,7 +30,7 @@
       "apt-get upgrade -y",
       "apt-get -y install openjdk-8-jdk wget",
       "wget http://archive.apache.org/dist/tomcat/tomcat-8/v8.0.23/bin/apache-tomcat-8.0.23.tar.gz",
-      "tar -zxvf /usr/local/tomcat/apache-tomcat-8.0.23.tar.gz ",
+      "tar -zxvf apache-tomcat-8.0.23.tar.gz ",
       "cp ./target/packer.war /usr/local/tomcat/webapps/packer.war",
       "CMD /usr/local/tomcat/bin/startup.sh && /bin/bash",
 
